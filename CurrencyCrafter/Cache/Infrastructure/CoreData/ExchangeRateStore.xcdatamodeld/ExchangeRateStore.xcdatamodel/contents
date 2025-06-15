@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23H124" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedCurrencyExchange" representedClassName="ManagedCurrencyExchange" syncable="YES">
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="rates" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedRates" inverseName="exchange" inverseEntity="ManagedRates"/>
+    </entity>
+    <entity name="ManagedRates" representedClassName="ManagedRates" syncable="YES">
+        <attribute name="currencyCode" attributeType="String"/>
+        <attribute name="exchangeRate" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="exchange" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedCurrencyExchange" inverseName="rates" inverseEntity="ManagedCurrencyExchange"/>
+    </entity>
+</model>

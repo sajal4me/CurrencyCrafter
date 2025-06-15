@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "BEF76C8F-33DB-4373-A371-164AF1EC32BC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:CurrencyCrafter.xcodeproj",
+          "identifier" : "F4F234102CBABE7B005E7603",
+          "name" : "CurrencyCrafter"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CurrencyCrafter.xcodeproj",
+      "identifier" : "F4F234102CBABE7B005E7603",
+      "name" : "CurrencyCrafter"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CurrencyCrafter.xcodeproj",
+        "identifier" : "F4F234262CBABE7C005E7603",
+        "name" : "CurrencyCrafterTests"
+      }
+    }
+  ],
+  "version" : 1
+}
